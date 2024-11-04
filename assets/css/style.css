@@ -7,7 +7,8 @@
 :root {
     --primary-font: "Inter", sans-serif;
     --secondary-font: "Macondo", cursive;
-    --primary-color: #3a2620; /*blue*/
+    --primary-color: #3a2620;
+    /*blue*/
     --secondary-color: #aa9581;
     --highlight: #416a8e;
     --light-highlight: #7a9fc2;
@@ -22,7 +23,15 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--primary-color);
+}
+
+h1,
+h2 {
     text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
 }
 
 .sub-heading-color {
@@ -33,6 +42,7 @@ h3 {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
 /*navbar css*/
 #navbar {
     background-color: var(--primary-color);
@@ -46,6 +56,18 @@ h3 {
 #header .lead {
     font-family: var(--secondary-font);
 }
+
+/* Services */
+#services .card-footer {
+    font-weight: bold;
+    color: var(--highlight);
+    background: transparent;
+}
+
+#services .card {
+    margin-bottom: 1.5rem;
+}
+
 /* grid visualisation CSS for testing */
 
 /* .container,
@@ -56,7 +78,32 @@ h3 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
-} */
+} 
 
+/* media querys */
 
+/* medium devices 768px up */
 
+@media screen and (min-width: 768px) {
+    #services .card-body {
+        min-height: 191px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #services .card-body {
+        min-height: 217px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #services .card-body {
+        min-height: 191px;
+    }
+}
