@@ -43,6 +43,32 @@ h2 {
     margin-bottom: 2rem;
 }
 
+/*BUTTONS*/
+
+.custom-button-fill {
+    border: 2px solid var(--highlight);
+    background-color: var(--highlight);
+    color: white;   
+}
+
+.custom-button-fill:hover {
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: white;   
+}
+
+.custom-button-outline {
+    border: 3px solid var(--highlight);
+    padding: 7px;
+    color: var(--highlight);
+
+}
+
+.custom-button-outline:hover {
+    background-color: var(--highlight);
+    color: white;
+
+}
 /*navbar css*/
 #navbar {
     background-color: var(--primary-color);
@@ -108,6 +134,8 @@ h2 {
 #contact .table-dark * {
     background-color: transparent;
 }
+
+
 
 /* media querys */
 
