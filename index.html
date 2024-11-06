@@ -158,7 +158,7 @@
                 </div>
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="card">
-                        <img src="assets/images/services-3.webp" class="card-img-top">
+                        <img src="assets/images/services-3.webp" class="card-img-top " alt="A kids party being held at Boardwalk Games">
                         <div class="card-body">
                             <h3 class="card-title sub-heading-color">Events</h3>
                             <p class="card-text">
@@ -336,6 +336,28 @@
     </script>
     <!--font awesome kit-->
     <script src="https://kit.fontawesome.com/9c42ee97f6.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+<script>
+    document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
+            link.addEventListener("click", function (e) {
+                let section = document.querySelector(e.target.getAttribute("href"));
+                if (section) {
+                    e.preventDefault(); // Prevent default anchor click behavior
+                    let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                    window.scroll({
+                        top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                        behavior: "smooth",
+                    });
+                    document
+                        .querySelector(".navbar-collapse")
+                        .classList.remove("show"); // Collapse navbar
+                }
+            });
+        });
+</script>
 </body>
 
 </html>
