@@ -141,6 +141,11 @@ h2 {
     margin-bottom: 2rem;
 }
 
+#home-book-btn {
+    margin-bottom: 56px;
+    padding: 10px 50px 10px 50px;
+}
+
 /* media querys */
 
 /* medium devices 768px up */
